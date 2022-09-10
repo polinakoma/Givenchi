@@ -1,0 +1,18 @@
+.body {
+    width: 100%;
+    @include flex-colunm-center-center;
+
+    &_overflow {
+        overflow: hidden;
+    }
+}
+
+
+
+@media screen and (max-width: 649px) {
+    .body {
+        &_overflow {
+            overflow: scroll;
+        }
+    }  
+}

@@ -1,0 +1,298 @@
+.header {
+    background-color: $headerColor;
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    height: min-content;
+
+    &__menue {
+        display: flex;
+        height: 40px;
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        position: absolute;
+        top: 24px;
+        left: 23px
+    }
+
+    &__stick {
+        border: 2px solid $headerButtonColor;
+        width: 40px;
+        margin-bottom: 8px;
+        background-color: $headerButtonColor;
+    }
+
+    &__stick:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__stick_white {
+        border: 2px solid $primaryColor;
+        background-color: $primaryColor;
+    }
+
+    &__stick_change-one {
+        transform: rotate(-45deg) translate(-6px, 8px);
+        transition: linear 0.2s;
+    }
+
+    &__stick_change-two {
+        opacity: 0;
+    }
+
+    &__stick_change-three {
+        transform: rotate(45deg) translate(-8px, -12px);
+        transition: linear 0.2s;
+    }
+
+    &__menue-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    &__menue-logo {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        z-index: 50;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.04em;;
+        text-transform: uppercase;
+        margin: 310px 0 0 0;
+        min-width: fit-content;
+        height: fit-content;
+    }
+
+    &__button {
+        background-color: $headerButtonColor;
+        color: $primaryColor;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        max-width: 350px;
+        min-height: 48px;
+        margin-top: 32px;
+    }
+
+    &__button:hover {
+        background-color: $primaryColor;
+        color: $headerButtonColor;
+        border-color: $primaryColor;
+    }
+
+    &__picture {
+        padding-left: 23px;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width: 1348px) {
+    .header {
+        &__heading {
+            position: relative;
+            top: 0;
+            right: 100px; 
+        }   
+    
+        &__button {
+            position: relative;
+            top: 0;
+            right: 100px;
+        }
+    }  
+}
+
+@media screen and (max-width: 1245px) {
+    .header {
+        &__heading {
+            right: 200px;   
+        } 
+    
+        &__button {
+            position: relative;
+            top: 0;
+            right: 200px;
+        } 
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header {
+        &__picture {
+            width: 486px;
+            height: 646px;
+        }
+    
+        &__heading {
+            margin-top: 200px;
+            right: 100px;  
+        } 
+    
+        &__button {
+            right: 100px;  
+        } 
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .header {
+        &__heading {
+            margin-top: 200px;
+            right: 100px;  
+            font-size: 32px;
+            line-height: 40px;
+        } 
+    }   
+}
+
+@media screen and (max-width: 815px) {
+    .header {
+        &__heading {
+            right: 220px;
+        } 
+    
+        &__button {
+            right: 220px;
+        } 
+
+        &__menue {
+            top: 21px;
+            left: 20px;
+            gap: 10px;
+        } 
+
+        &__picture {
+            width: 486px;
+            height: 646px;
+            box-sizing: border-box;
+        } 
+    }
+}
+
+@media screen and (max-width: 697px) {
+    .header {
+        &__heading {
+            right: 315px;
+        } 
+    
+        &__button {
+            right: 315px;
+        }
+    } 
+}
+
+@media screen and (max-width: 607px) {
+    .header {
+        &__heading {
+            font-size: 24px;
+            line-height: 32px;
+        } 
+    
+        &__button {
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 280px;
+            min-height: 44px;
+        } 
+    }
+    
+}
+
+@media screen and (max-width: 499px) {
+    .header {
+        &__picture {
+            width: 320px;
+            height: 426px;
+        }
+    
+        &__menue {
+            gap: 18px;
+        }
+    
+        &__stick {
+            border: 1px solid $headerButtonColor;
+            width: 20px;
+            margin-bottom: 6px;
+            box-sizing: border-box;
+        }
+    
+        &__stick_white {
+            border: 1px solid $primaryColor;
+        }
+    
+        &__stick_change-one {
+            transform: rotate(-45deg) translate(-9px, 6px);
+            transition: linear 0.3s;
+        }
+        
+        &__stick_change-three {
+            transform: rotate(45deg) translate(-6px, -2px);
+            transition: linear 0.3s;
+        }
+        
+        &__menue-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    
+        &__heading {
+            margin: 111px 0 0 20px;
+            min-width: 280px;
+        }
+    
+        &__button {
+            margin: 32px 0 0 20px;
+        } 
+    }  
+}
+
+@media screen and (max-width: 350px) {
+    .header {
+        &__menue {
+            top: 10px;
+            left: 22px;
+        }
+
+        &__logo {
+            top: 10px;
+            left: 22px;
+        }
+
+        &__heading {
+            margin: 111px 0 0 16px;
+        }
+
+        &__button {
+            margin-left: 16px;
+        }
+
+        &__picture {
+            padding-left: 2px;
+            object-fit: cover;
+        }
+
+
+        &__stick {
+            margin-bottom: 3px;
+        }
+    }  
+}

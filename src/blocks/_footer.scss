@@ -1,0 +1,138 @@
+.footer {
+    width: 100%;
+    background-color: $footerColor;
+    @include flex-colunm-center-center;
+    color: $primaryColor;
+
+    &__description {
+        max-width: 700px;   
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 40px 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__checkbox {
+        opacity: 0;
+    }
+
+    &__checkbox + label {
+        cursor: pointer;
+    }
+
+    &__checkbox + label::before {
+        content: "";
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0 10px 0 0;
+        border: 1px solid $primaryColor;
+    }
+
+    &__checkbox + label::after {
+        content: none;
+        display: inline-block;
+        height: 8px;
+        width: 12px;
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 3px;
+        left: 4px;
+    }
+
+    &__checkbox:checked + label::after {
+        content: "";
+    }
+
+    &__input {
+        background-color: $footerColor;
+        border: 1px solid $primaryColor;
+        min-width: 592px;
+        padding: 14px 24px;
+        color: $placeholder;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    &__input:hover {
+        background-color: $primaryColor;
+    }
+
+    &__button {
+        background-color: $primaryColor;
+        padding: 14px 23px;
+        text-transform: uppercase;
+        border: 1px solid $primaryColor;
+    }
+
+    &__button:hover {
+        background-color: $footerColor;
+        color: $primaryColor;   
+    }
+
+    &__form-checkbox {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__policy {
+        margin: 0;
+        max-width: 660px;
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 888px) {
+    .footer {
+        &__description {
+            max-width: 486px;
+        }
+    
+        &__input {
+            min-width: 378px;
+        }
+    
+        &__form-checkbox {
+            max-width: 486px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer {
+        &__description {
+            max-width: 280px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    
+        &__input {
+            min-width: 280px;
+            text-align: center;
+        }
+    
+        &__input {
+            display: flex;
+            flex-direction: column;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    
+        &__button {
+            min-width: 280px;
+        }
+    
+        &__form-checkbox {
+            max-width: 280px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
