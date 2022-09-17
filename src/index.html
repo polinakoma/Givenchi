@@ -26,17 +26,21 @@
                 </div>
             </div>
             <div class="header__menue">
-                <button class="header__menue-logo">
+                <button class="header__menue-logo" type="menu">
                     <div id="stick_one" class="header__stick"></div>
                     <div id="stick_two" class="header__stick"></div>
                     <div id="stick_three" class="header__stick"></div>
                 </button>
-                <h3 class="header__menue-title">Menu</h3>
+                <p class="header__menue-title">Menu</p>
             </div>
             <img class="header__picture" src="<%=require('./images/main_pic.svg')%>" alt="Givanchi look">
             <div class="header__title">
-                <h1 class="header__heading">Givenchy <br> spring summer 2021 <br> by Matthew M. Williams</h1>
-                <button class="header__button">Subscribe to collection’s news</button>
+                <h1 class="header__heading">
+                    <p class="header__heading-line">Givenchy</p> 
+                    <p class="header__heading-line">spring summer 2021</p> 
+                    <p class="header__heading-line">by Matthew M. Williams</p>
+                </h1>
+                <button type="submit" class="header__button">Subscribe to collection’s news</button>
             </div>
         </header>
         <main class="main">
@@ -46,9 +50,9 @@
                 stream of consciousness for Williams and is a ‘sampler’ of what is to 
                 come.</p>
                 <div class="about__quote" >
-                    <p class="about__text">“To me, fashion expresses a point of view where formality and informality, 
+                    <blockquote class="about__text">“To me, fashion expresses a point of view where formality and informality, 
                     construction and comfort co-exist. My ethos is about the luxury of infusing 
-                    clothes with your own personality, not being worn by them,”</p>
+                    clothes with your own personality, not being worn by them,”</blockquote>
                     <p class="about__text">Matthew M. Williams.</p>
                 </div>
                 <img class="about__card about__card_first" src="<%=require('./images/red_pic.svg')%>" alt="Givanchi look">
@@ -61,8 +65,8 @@
                 a powerful personal style.
                 </p>
                 <div class="about__quote">
-                    <p class="about__text">“In each of these portraits, a strong character wears a look that reflects 
-                    who they are: they’re the ones who bring the clothes to life.”</p>
+                    <blockquote class="about__text">“In each of these portraits, a strong character wears a look that reflects 
+                    who they are: they’re the ones who bring the clothes to life.”</blockquote>
                     <p class="about__text">Matthew M. Williams.</p>
                 </div>  
                 <img class="about__card about__card_third" src="<%=require('./images/green_pic.svg')%>" alt="Givanchi look">
@@ -84,11 +88,10 @@
         <footer id="subscribe_section" class="footer">
             <p class="footer__description">Subscribe to the newsletterand be the first to know about new collection’s drop 
             date and news</p>
-            <div>
-                <form>
+                <form name="email_subscribe">
                     <div class="footer__form-input">
-                        <input type="email" class="footer__input" placeholder="Eneter your email here" require>
-                        <button class="footer__button">Submit</button>
+                        <input type="email" name="email" class="footer__input" placeholder="Eneter your email here" require>
+                        <button type="submit" class="footer__button">Submit</button>
                     </div>
                     <div class="footer__form-checkbox">
                         <input id="data_agreement" class="footer__checkbox" type="checkbox" name="agreement" 
@@ -100,9 +103,6 @@
                 <div> 
                 <p class="footer__description">&#64; 2021, Givenchy. Some rights reserved</p> 
                 </div>
-
-            </div>
-
         </footer>
     </div>
 </body>

@@ -1,6 +1,6 @@
 import { sidebar, headerMenu, stickOne, stickTwo, stickThree, headerMenue, body, 
     aboutLink, looksLink, subscribeLink, aboutSection, looksSection, subscribeSection }
-    from "./constans.js";
+    from './constans.js';
 
 // Открытие сайд-бара 
 const openSidebar = function() {

@@ -89,26 +89,16 @@
 
 @media screen and (max-width: 1151px) {
     .about {
-        &__quote:last-of-type {
-            margin-top: 246px;
-        }
-
-        &__card_third {
-            width: 612px;
-            height: 766px;
-            right: 120px;
-        }
-    }
-}
-
-@media screen and (max-width: 1041px) {
-    .about {
         &__description:last-of-type {
             margin-top: 140px;
         }
 
         &__quote {
             margin-top: 180px;
+        }
+
+        &__quote:last-of-type {
+            margin-top: 246px;
         }
 
         &__card_first {
@@ -122,7 +112,10 @@
         }
 
         &__card_third {
-            right: 220px;
+            width: 612px;
+            height: 766px;
+            right: 120px;
+          //   right: 220px;
         }
     }
 }
@@ -133,11 +126,7 @@
             font-size: 32px;
             line-height: 40px;
         }
-    }
-}
 
-@media screen and (max-width: 800px) {
-    .about {
         &__quote {
             margin-top: 0;
         }
@@ -172,22 +161,18 @@
 
 @media screen and (max-width: 713px) {
     .about {
-        &__card_third {
-            width: 412px;
-            height: 515px;
-            right: 110px;
-        }
-    }
-}
-
-@media screen and (max-width: 649px) {
-    .about {
         display: flex;
         flex-direction: column;
         max-width: 604px;
         padding: 40px 20px;
         gap: 40px;
         flex-flow: column;
+
+        &__card_third {
+            width: 412px;
+            height: 515px;
+            right: 110px;
+        }
 
         &__description {
             order: 2;
@@ -231,14 +216,11 @@
             margin-top: 0;
             order: 8;
         }
-    }
-}
 
-@media screen and (max-width: 647px) {
-    .about {
         &__title {
             order: 1;
         }
+
     }
 }
 

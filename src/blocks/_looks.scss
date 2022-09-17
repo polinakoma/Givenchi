@@ -12,6 +12,16 @@
     }
 }
 
+@media screen and (max-width: 770px) {
+    .looks {
+        &__heading {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 40px;    
+        }
+    }
+}
+
 @media screen and (max-width: 403px) {
     .looks {
         &__heading {

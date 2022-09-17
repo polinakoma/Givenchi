@@ -79,6 +79,10 @@
         height: fit-content;
     }
 
+    &__heading-line {
+        margin: 0;
+    }
+
     &__button {
         background-color: $headerButtonColor;
         color: $primaryColor;
@@ -90,6 +94,7 @@
         max-width: 350px;
         min-height: 48px;
         margin-top: 32px;
+        cursor: pointer;
     }
 
     &__button:hover {
@@ -102,24 +107,20 @@
         padding-left: 23px;
         object-fit: cover;
     }
+
+    &__heading {
+        position: relative;
+        top: 0;
+        right: 100px; 
+    }   
+
+    &__button {
+        position: relative;
+        top: 0;
+        right: 100px;
+    }
 }
 
-
-@media screen and (max-width: 1348px) {
-    .header {
-        &__heading {
-            position: relative;
-            top: 0;
-            right: 100px; 
-        }   
-    
-        &__button {
-            position: relative;
-            top: 0;
-            right: 100px;
-        }
-    }  
-}
 
 @media screen and (max-width: 1245px) {
     .header {
@@ -128,15 +129,9 @@
         } 
     
         &__button {
-            position: relative;
-            top: 0;
             right: 200px;
         } 
-    }
-}
 
-@media screen and (max-width: 1150px) {
-    .header {
         &__picture {
             width: 486px;
             height: 646px;
@@ -155,9 +150,7 @@
 
 @media screen and (max-width: 1028px) {
     .header {
-        &__heading {
-            margin-top: 200px;
-            right: 100px;  
+        &__heading {  
             font-size: 32px;
             line-height: 40px;
         } 
@@ -181,15 +174,8 @@
         } 
 
         &__picture {
-            width: 486px;
-            height: 646px;
             box-sizing: border-box;
         } 
-    }
-}
-
-@media screen and (max-width: 697px) {
-    .header {
         &__heading {
             right: 315px;
         } 
@@ -197,7 +183,7 @@
         &__button {
             right: 315px;
         }
-    } 
+    }
 }
 
 @media screen and (max-width: 607px) {
@@ -213,12 +199,7 @@
             max-width: 280px;
             min-height: 44px;
         } 
-    }
-    
-}
 
-@media screen and (max-width: 499px) {
-    .header {
         &__picture {
             width: 320px;
             height: 426px;
@@ -262,7 +243,8 @@
         &__button {
             margin: 32px 0 0 20px;
         } 
-    }  
+    }
+    
 }
 
 @media screen and (max-width: 350px) {
