@@ -9,6 +9,7 @@
     &__card {
         width: 350px;
         height: 436px;
+        margin: 0 auto;
     }
 }
 
@@ -49,5 +50,11 @@
         padding-top: 20px;
         padding-bottom: 40px;
     }  
+}
+
+@media  screen and (max-width: 279px) {
+    .photo-grid {
+        max-width: 140px;
+    }
 }
    

@@ -54,11 +54,7 @@
     }
 
     &__text {
-        margin: 0 0 24px; 
-    }
-
-    &__text:last-of-type {
-        margin: 0;
+        margin: 0 0 24px 0;
     }
 
     &__card {
@@ -67,12 +63,12 @@
         z-index: -5;
     }
 
-    &__card_first {
+    &__kyli-pic {
         top: 0;
         right: 174px;
     }
 
-    &__card_third {
+    &__lawrence-pic {
         top: 0;
         right: 174px;
     }
@@ -81,7 +77,7 @@
 
 @media screen and (max-width: 1439px) {
     .about {
-        &__card_third {
+        &__lawrence-pic {
             right: 320px;
         }
     }
@@ -101,27 +97,30 @@
             margin-top: 246px;
         }
 
-        &__card_first {
+        &__kyli-pic {
             width: 560px;
             height: 700px;
         }
 
-        &__card_second {
+        &__blue-pic {
             width: 494px;
             height: 494px;
         }
 
-        &__card_third {
-            width: 612px;
-            height: 766px;
-            right: 120px;
-          //   right: 220px;
+        &__lawrence-pic {
+            width: 582px;
+            height: 728px;
+            right: 150px;
         }
     }
 }
 
-@media screen and (max-width: 861px) {
+@media screen and (max-width: 905px) {
     .about {
+        padding-top: 60px;
+        padding-bottom: 130px;
+        row-gap: 70px;
+
         &__title {
             font-size: 32px;
             line-height: 40px;
@@ -132,34 +131,36 @@
         }
 
         &__quote:last-of-type {
-            margin-top: 146px;
+            margin-top: 166px;
         }
 
-        &__card_first {
+        &__kyli-pic {
             width: 364px;
             height: 452px;
             top: 50px;
-            right: 100px;
+            right: 120px;
         }
 
-        &__card_second {
+        &__blue-pic {
+            top: 18px;
             width: 304px;
             height: 304px;
         }
 
-        &__card_third {
+        &__lawrence-pic {
+            top: 50px;
+            right: 120px;
             width: 485px;
             height: 607px;
-            right: 150px;
         }
 
         &__description:last-of-type {
-            margin-top: 0;
+            margin-top: -22px;
         }
     }
 }
 
-@media screen and (max-width: 713px) {
+@media screen and (max-width: 755px) {
     .about {
         display: flex;
         flex-direction: column;
@@ -168,7 +169,7 @@
         gap: 40px;
         flex-flow: column;
 
-        &__card_third {
+        &__lawrence-pic {
             width: 412px;
             height: 515px;
             right: 110px;
@@ -183,14 +184,14 @@
             order: 6;
         }
 
-        &__card_first {
+        &__kyli-pic {
             top: 0;
             left: 0;
             margin: 0 auto;
             order: 3;
         }
 
-        &__card_second {
+        &__blue-pic {
             width: 364px;
             height: 364px;
             top: 0;
@@ -199,7 +200,7 @@
             order: 5;
         }
 
-        &__card_third {
+        &__lawrence-pic {
             width: 364px;
             height: 453px;
             top: 0;
@@ -227,28 +228,33 @@
 @media screen and (max-width: 403px) {
     .about {
         gap: 20px;
+        padding-bottom: 20px;
 
         &__description {
             font-size: 16px;
             line-height: 24px;
         }
 
-        &__card_first {
+        &__kyli-pic {
             width: 280px;
             height: 348px;
             padding-top: 20px;
         }
 
-        &__card_second {
+        &__blue-pic {
             width: 280px;
             height: 280px;
-            padding-top: 16px;
+            padding-top: 0;
         }
 
-         &__card_third {
+         &__lawrence-pic {
             width: 280px;
             height: 350px;
             padding-top: 20px;
+        }
+
+        &__text {
+            margin-bottom: 20px;
         }
 
         &__quote {

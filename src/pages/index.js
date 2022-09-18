@@ -8,7 +8,8 @@
   import { openSidebar, closeSidebar } from '../scripts/modal.js';
 
   import { handleChangeMenueColor, handleChangeMenuLogo, scrollSmooth, bodyOverflow,
-    cardAnimation } from '../scripts/animation.js';
+    // cardAnimation 
+  } from '../scripts/animation.js';
   
 
   // Появление контента в блоке About
@@ -102,5 +103,5 @@
 
   // Смена карточек
  window.addEventListener('load',function() {
-  cardAnimation();
+ // cardAnimation();
  });

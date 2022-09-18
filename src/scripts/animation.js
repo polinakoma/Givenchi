@@ -37,18 +37,19 @@ function bodyOverflow() {
     }
   }
   
-  function cardAnimation() {
-        setInterval(function () {
-            for (let i = 0; i <= 1; i++) {
-              randomizeArray(imageArray)
-                let random = Math.floor(Math.random() * imageArray.length);
-                if (imageOnPage[i].src !== imageArray[i].src) {
-                   imageOnPage[random].src = imageArray[i].src;
-                }
-            }
-        }, 300);
-  }
+  // function cardAnimation() {
+  //       setInterval(function () {
+  //           for (let i = 0; i <= 1; i++) {
+  //             randomizeArray(imageArray)
+  //               let random = Math.floor(Math.random() * imageArray.length);
+  //               if (imageOnPage[i].src !== imageArray[i].src) {
+  //                  imageOnPage[random].src = imageArray[i].src;
+  //               }
+  //           }
+  //       }, 300);
+  // }
 
 
 export { handleChangeMenueColor, handleChangeMenuLogo, scrollSmooth, bodyOverflow,
-    cardAnimation }
+   // cardAnimation 
+  }

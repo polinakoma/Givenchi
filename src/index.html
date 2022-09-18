@@ -13,34 +13,35 @@
             <div class="side-bar">
                 <div class="side-bar__container">
                     <nav>
-                        <li class="side-bar__text">
-                            <a id="about" class="side-bar__link">About</a>
-                        </li>
-                        <li class="side-bar__text">
-                            <a id="looks" class="side-bar__link">Looks</a>
-                        </li>
-                        <li class="side-bar__text">
-                            <a id="subscribe" class="side-bar__link">Subscribe</a>
-                        </li>
+                        <menu class="side-bar__list">
+                            <li class="side-bar__text">
+                                <a id="about" class="side-bar__link">About</a>
+                            </li>
+                            <li class="side-bar__text">
+                                <a id="looks" class="side-bar__link">Looks</a>
+                            </li>
+                            <li class="side-bar__text">
+                                <a id="subscribe" class="side-bar__link">Subscribe</a>
+                            </li>
+                        </menu>
+                        
                     </nav>
                 </div>
             </div>
-            <div class="header__menue">
-                <button class="header__menue-logo" type="menu">
-                    <div id="stick_one" class="header__stick"></div>
-                    <div id="stick_two" class="header__stick"></div>
-                    <div id="stick_three" class="header__stick"></div>
-                </button>
-                <p class="header__menue-title">Menu</p>
-            </div>
-            <img class="header__picture" src="<%=require('./images/main_pic.svg')%>" alt="Givanchi look">
-            <div class="header__title">
-                <h1 class="header__heading">
-                    <p class="header__heading-line">Givenchy</p> 
-                    <p class="header__heading-line">spring summer 2021</p> 
-                    <p class="header__heading-line">by Matthew M. Williams</p>
-                </h1>
-                <button type="submit" class="header__button">Subscribe to collection’s news</button>
+            <div class="header__container">
+                <div class="header__menue">
+                    <div class="header__menue-logo">
+                        <div id="stick_one" class="header__stick"></div>
+                        <div id="stick_two" class="header__stick"></div>
+                        <div id="stick_three" class="header__stick"></div>
+                    </div>
+                    <p class="header__menue-title">Menu</p>
+                </div>
+                <div class="header__picture"></div>
+                <div class="header__title">
+                    <h1 class="header__heading">Givenchy <br> spring summer 2021 <br> by Matthew M. Williams</h1>
+                    <button type="submit" class="header__button">Subscribe to collection’s news</button>
+                </div>
             </div>
         </header>
         <main class="main">
@@ -55,8 +56,8 @@
                     clothes with your own personality, not being worn by them,”</blockquote>
                     <p class="about__text">Matthew M. Williams.</p>
                 </div>
-                <img class="about__card about__card_first" src="<%=require('./images/red_pic.svg')%>" alt="Givanchi look">
-                <img class="about__card about__card_second" src="<%=require('./images/big_bag_pic.svg')%>" alt="Givanchi look">
+                <img class="about__card about__kyli-pic" src="<%=require('./images/red_pic.svg')%>" alt="Givanchi look">
+                <img class="about__card about__blue-pic" src="<%=require('./images/big_bag_pic.svg')%>" alt="Givanchi look">
                 <p class="about__description">Matthew M. Williams reveals his vision with help from an all-star lineup 
                 of likeminded artists. The Creative Director called on close friends in his 
                 tight-knit community of artists. Kendall Jenner, Bella Hadid, Playboi Carti 
@@ -69,7 +70,7 @@
                     who they are: they’re the ones who bring the clothes to life.”</blockquote>
                     <p class="about__text">Matthew M. Williams.</p>
                 </div>  
-                <img class="about__card about__card_third" src="<%=require('./images/green_pic.svg')%>" alt="Givanchi look">
+                <img class="about__card about__lawrence-pic" src="<%=require('./images/green_pic.svg')%>" alt="Givanchi look">
             </section>
             <section id="looks_section" class="looks">
                 <h2 class="looks__heading">Looks</h2>
@@ -88,16 +89,17 @@
         <footer id="subscribe_section" class="footer">
             <p class="footer__description">Subscribe to the newsletterand be the first to know about new collection’s drop 
             date and news</p>
-                <form name="email_subscribe">
+                <form class="form" name="email_subscribe">
                     <div class="footer__form-input">
-                        <input type="email" name="email" class="footer__input" placeholder="Eneter your email here" require>
+                        <input type="email" name="email" class="footer__input" placeholder="Eneter your email here">
                         <button type="submit" class="footer__button">Submit</button>
                     </div>
                     <div class="footer__form-checkbox">
                         <input id="data_agreement" class="footer__checkbox" type="checkbox" name="agreement" 
                         value="data_agreement" hidden>
-                        <label class="footer__policy" for="data_agreement">I consent to the processing of my data by GIVENCHY 
-                        in accordance with the conditions set forth in the Privacy Policy</label>
+                        <label class="footer__policy" for="data_agreement"></label>
+                        <p class="footer__policy-text">I consent to the processing of my data by GIVENCHY 
+                            in accordance with the conditions set forth in the Privacy Policy</p>
                     </div>
                 </form>
                 <div> 
