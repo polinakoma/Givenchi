@@ -1,0 +1,268 @@
+.header {
+    background-color: $headerColor;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: row; 
+        height: min-content;
+        max-width: 1440px;
+        margin: 0 auto;
+
+    }
+
+    &__menue {
+        display: flex;
+        height: 40px;
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        position: absolute;
+        top: 24px;
+        left: 23px
+    }
+
+    &__stick {
+        border: 2px solid $headerButtonColor;
+        width: 40px;
+        margin-bottom: 8px;
+        background-color: $headerButtonColor;
+    }
+
+    &__stick:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__stick_white {
+        border: 2px solid $primaryColor;
+        background-color: $primaryColor;
+    }
+
+    &__stick_change-one {
+        transform: rotate(-45deg) translate(-6px, 8px);
+        transition: linear 0.2s;
+    }
+
+    &__stick_change-two {
+        opacity: 0;
+    }
+
+    &__stick_change-three {
+        transform: rotate(45deg) translate(-8px, -12px);
+        transition: linear 0.2s;
+    }
+
+    &__menue-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    &__menue-logo {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        z-index: 50;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin: 310px 0 0 0;
+        min-width: fit-content;
+        height: fit-content;
+    }
+
+    &__heading-line {
+        margin: 0;
+    }
+
+    &__button {
+        background-color: $headerButtonColor;
+        color: $primaryColor;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        max-width: 350px;
+        min-height: 48px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background-color: $primaryColor;
+        color: $headerButtonColor;
+        border-color: $primaryColor;
+    }
+
+    &__picture {
+        background-image: url(../images/main_pic.svg);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 900px;
+        margin-left: 24px;
+    }  
+}
+
+
+@media screen and (max-width: 1245px) {
+    .header {
+        &__picture {
+            width: 486px;
+            height: 645px;
+            background-size: cover;
+        }
+    
+        &__heading {
+            margin-top: 221px;
+        } 
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .header {
+        &__heading {  
+            font-size: 32px;
+            line-height: 40px;
+        } 
+
+        &__title {
+            width: 485px;
+        }
+    }   
+}
+
+@media screen and (max-width: 815px) {
+    .header {
+        &__menue {
+            top: 23px;
+            left: 22px;
+            gap: 20px;
+        } 
+
+        &__picture {
+            box-sizing: border-box;
+            margin: 0;
+        } 
+    }
+}
+
+@media screen and (max-width: 607px) {
+    .header {
+        &__heading {
+            font-size: 24px;
+            line-height: 32px;
+            min-width: 280px;
+            margin: 111px 0 0 20px;
+        } 
+
+        &__title {
+            width: 320px;
+        }
+    
+        &__button {
+            font-size: 14px;
+            line-height: 20px;
+            max-width: 280px;
+            min-height: 44px;
+        } 
+
+        &__picture {
+            width: 320px;
+            height: 403px;
+        }
+    
+        &__menue {
+            gap: 18px;
+        }
+    
+        &__stick {
+            border: 1px solid $headerButtonColor;
+            width: 20px;
+            margin-bottom: 6px;
+            box-sizing: border-box;
+        }
+    
+        &__stick_white {
+            border: 1px solid $primaryColor;
+        }
+    
+        &__stick_change-one {
+            transform: rotate(-45deg) translate(-9px, 6px);
+            transition: linear 0.3s;
+        }
+        
+        &__stick_change-three {
+            transform: rotate(45deg) translate(-6px, -2px);
+            transition: linear 0.3s;
+        }
+        
+        &__menue-title {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    
+        &__button {
+            margin: 32px 0 0 20px;
+        } 
+    }   
+}
+
+@media screen and (max-width: 350px) {
+    .header {
+        &__menue {
+            top: 8px;
+            left: 22px;
+        }
+
+        &__logo {
+            top: 10px;
+            left: 22px;
+        }
+
+        &__title {
+            max-width: 280px;
+            position: absolute;
+            margin: 111px auto 0;
+        }
+
+        &__heading {
+            margin: 0 auto;
+        }
+
+        &__button {
+            margin: 32px 0 0;
+        }
+
+        &__picture {
+            margin: 0;
+            width: 320px;
+            height: 426px;
+            background-size: cover;
+        }
+
+        &__stick {
+            margin-bottom: 3px;
+        }
+    }  
+}
